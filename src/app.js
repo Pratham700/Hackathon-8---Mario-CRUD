@@ -37,7 +37,7 @@ app.post("/mario", async (req, res) => {
     const newChar = await addingChar.save();
     res.status(201).send(newChar);
   } catch (error) {
-    res.status(400).json({ message: "either name or weight is missing" });
+    res.status(400).json({message: "either name or weight is missing"});
   }
 });
 app.patch("/mario/:id", async (req, res) => {

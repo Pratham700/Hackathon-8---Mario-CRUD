@@ -4,12 +4,12 @@ const mongoose = require('mongoose');
 
 const marioSchema = new mongoose.Schema({
     name:{
-        type:String,
-        default:'Luigi'
+        type:String
+        
     },
     weight:{
-     type:Number ,
-     default:60
+     type:Number 
+     
     }
 }) ;
 
